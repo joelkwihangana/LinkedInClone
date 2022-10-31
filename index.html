@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AkaiLink</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-left">
+        <a href="index.html" class="logo">
+          <img src="images/logoSmall.png" alt="" />
+        </a>
+
+        <div class="search-box">
+          <img src="images/search.png" alt="" />
+          <input type="text" placeholder="Search" />
+        </div>
+      </div>
+      <div class="nav-center">
+        <ul>
+          <li>
+            <a class="active-link" href="#"
+              ><img src="images/home.png" alt="" /><span>Home</span></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img src="images/network.png" alt="" /><span>My Network</span></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img src="images/jobs.png" alt="" /><span>Jobs</span></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img src="images/message.png" alt="" /><span>Messaging</span></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img src="images/notification.png" alt="" /><span
+                >Notifications</span
+              ></a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <div class="online">
+          <img
+            onclick="showOrHideProfile()"
+            class="nav-profile-img"
+            src="images/user-1.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <!-- -------------- Profile-dropdown-menu ----------------- -->
+      <div class="profile-menu-wrap" id="profileMenu">
+        <div class="profile-menu profile-display-none">
+          <div class="user-info">
+            <img src="images/user-1.jpg" alt="" />
+            <div>
+              <h3>Joel KWIHANGANA</h3>
+              <a href="profile.html">See your Profile</a>
+            </div>
+          </div>
+          <hr />
+          <a href="#" class="profile-menu-link">
+            <img src="images/feedback.png" alt="" />
+            <p>Give feedback</p>
+            <span>></span>
+          </a>
+          <a href="#" class="profile-menu-link">
+            <img src="images/setting.png" alt="" />
+            <p>Settings & Privacy</p>
+            <span>></span>
+          </a>
+          <a href="#" class="profile-menu-link">
+            <img src="images/help.png" alt="" />
+            <p>Help & Support</p>
+            <span>></span>
+          </a>
+          <a href="#" class="profile-menu-link">
+            <img src="images/display.png" alt="" />
+            <p>Display & Accessiblility</p>
+            <span>></span>
+          </a>
+          <a href="#" class="profile-menu-link">
+            <img src="images/logout.png" alt="" />
+            <p>Logout</p>
+            <span>></span>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!------- navbar ends here ---------->
+    <div class="container">
+      <!-- ----- left-sidebar ----------- -->
+      <div class="left-sidebar">
+        <div class="sidebar-profile-box">
+          <img src="images/coverPic.jpg" width="100%" alt="" />
+          <div class="sidebar-profile-info">
+            <img src="images/user-1.jpg" alt="" />
+            <h1>Joel KWIHANGANA</h1>
+            <h3>Web Developer at Microsoft</h3>
+            <ul>
+              <li>your profile Views <span>56</span></li>
+              <li>Your Post Views <span>108</span></li>
+              <li>Your Connections <span>502</span></li>
+            </ul>
+          </div>
+          <div class="sidebar-profile-link">
+            <a href="#"><img src="images/items.png" alt="" />My Items</a>
+            <a href="#"><img src="images/premium.png" alt="" />Try Premium</a>
+          </div>
+        </div>
+        <div class="sidebar-activity" id="sidebarActivity">
+          <h3>RECENT ACTIVITIES</h3>
+          <a href="#"><img src="images/recent.png" alt="" />Web Development</a>
+          <a href="#"><img src="images/recent.png" alt="" />User Interface</a>
+          <a href="#"><img src="images/recent.png" alt="" />Online Learning</a>
+          <a href="#"><img src="images/recent.png" alt="" />Code Better</a>
+          <a href="#"><img src="images/recent.png" alt="" />Group Learning</a>
+          <h3>GROUPS</h3>
+          <a href="#"><img src="images/group.png" alt="" />Web Design Group</a>
+          <a href="#">
+            <img src="images/group.png" alt="" />HTML & CSS Learners</a
+          >
+          <a href="#">
+            <img src="images/group.png" alt="" />Python & JavaScript Group</a
+          >
+          <a href="#">
+            <img src="images/group.png" alt="" />Learning Coding Online</a
+          >
+          <h3>HASHTAGS</h3>
+          <a href="#"><img src="images/hashtag.png" alt="" />Webdevelopment</a>
+          <a href="#"><img src="images/hashtag.png" alt="" />userinterface</a>
+          <a href="#"><img src="images/hashtag.png" alt="" />onlinelearning</a>
+          <div class="discover-more-link"><a href="#">Discover more</a></div>
+        </div>
+        <p onclick="toggleActivity()" id="showMoreLink">Show more <b>+</b></p>
+      </div>
+      <!-- -------- main-content----------- -->
+      <div class="main-content">
+        <div class="create-post">
+          <div class="create-post-input">
+            <img src="images/user-1.jpg" alt="" />
+            <textarea rows="2" placeholder="Write a Post"></textarea>
+          </div>
+          <div class="create-post-links">
+            <li><img src="images/photo.png" alt="" />Photo</li>
+            <li><img src="images/video.png" alt="" />Video</li>
+            <li><img src="images/event.png" alt="" />Event</li>
+            <li>Post</li>
+          </div>
+        </div>
+        <div class="sort-by">
+          <hr />
+          <p>
+            Sort by:
+            <span
+              >Top
+              <img src="images/down-arrow.png" alt="" />
+            </span>
+          </p>
+        </div>
+        <div class="post">
+          <div class="post-author">
+            <img src="images/user-1.jpg" alt="" />
+            <div class="">
+              <h1>Joel KWIHANGANA</h1>
+              <small
+                >Founder and CEO of BlackCandles Ltd | Nexolla Business Group
+                Inverstor | Web Developer at Microsoft</small
+              >
+              <small>4 min ago</small>
+            </div>
+          </div>
+          <p>
+            There is something i always plan to implement but the problem is
+            this. no and again i said no! There is no time to implement. cse i
+            am completely busy online searching for beautiful girls instead of
+            just studying!
+          </p>
+          <img src="images/beautifulGirlsPost.PNG" alt="" width="100%" />
+          <div class="post-stats">
+            <div class="">
+              <img src="images/thumbsup.png" alt="" />
+              <img src="images/love.png" alt="" />
+              <img src="images/clap.png" alt="" />
+              <span class="liked-users">AppleCindy and 323 others</span>
+            </div>
+            <div class="">
+              <span>71 comments &middot; 40 shares</span>
+            </div>
+          </div>
+          <div class="post-activity">
+            <div>
+              <img
+                src="images/user-1.jpg"
+                alt=""
+                class="post-activity-user-icon"
+              />
+              <img
+                src="images/down-arrow.png"
+                alt=""
+                class="post-activity-arrow-icon"
+              />
+            </div>
+            <div class="post-activity-link">
+              <img src="images/like.png" alt="" /><span>Like</span>
+            </div>
+            <div class="post-activity-link">
+              <img src="images/comment.png" alt="" /><span>Comment</span>
+            </div>
+            <div class="post-activity-link">
+              <img src="images/share.png" alt="" /><span>Share</span>
+            </div>
+            <div class="post-activity-link">
+              <img src="images/send.png" alt="" /><span>Send</span>
+            </div>
+          </div>
+        </div>
+        <div class="post">
+          <div class="post-author">
+            <img src="images/user-5.png" alt="" />
+            <div class="">
+              <h1>John BIZIMANA</h1>
+              <small
+                >Student at Univercity of Rwanda Huye Campus | Nexolla Business
+                Group Inverstor | Web Developer at Pisconerworks</small
+              >
+              <small>5 days ago</small>
+            </div>
+          </div>
+          <p>
+            These are some love quotes in computer language. These lines will
+            definitely hit differently. Using these programming language love
+            codes, you surprise your mate and make a great first impression. So
+            here is a list of such romantic quotes.
+          </p>
+          <img src="images/post-image-4.png" alt="" width="100%" />
+          <div class="post-stats">
+            <div class="">
+              <img src="images/thumbsup.png" alt="" />
+              <img src="images/love.png" alt="" />
+              <img src="images/clap.png" alt="" />
+              <span class="liked-users">AppleCindy and 323 others</span>
+            </div>
+            <div class="">
+              <span>71 comments &middot; 40 shares</span>
+            </div>
+          </div>
+          <div class="post-activity">
+            <div>
+              <img
+                src="images/user-5.png"
+                alt=""
+                class="post-activity-user-icon"
+              />
+              <img
+                src="images/down-arrow.png"
+                alt=""
+                class="post-activity-arrow-icon"
+              />
+            </div>
+            <div class="post-activity-link">
+              <img src="images/like.png" alt="" /><span>Like</span>
+            </div>
+            <div class="post-activity-link">
+              <img src="images/comment.png" alt="" /><span>Comment</span>
+            </div>
+            <div class="post-activity-link">
+              <img src="images/share.png" alt="" /><span>Share</span>
+            </div>
+            <div class="post-activity-link">
+              <img src="images/send.png" alt="" /><span>Send</span>
+            </div>
+          </div>
+        </div>
+        <div class="post">
+          <div class="post-author">
+            <img src="images/user-3.jpg" alt="" />
+            <div class="">
+              <h1>Isheja Candy</h1>
+              <small>Works at Itetero Rwanda</small>
+              <small>6 days ago</small>
+            </div>
+          </div>
+          <p>
+            These are some love quotes in computer language. These lines will
+            definitely hit differently. Using these programming language love
+            codes, you surprise your mate and make a great first impression. So
+            here is a list of such romantic quotes.
+          </p>
+          <img src="images/post-image-1.png" alt="" width="100%" />
+          <div class="post-stats">
+            <div class="">
+              <img src="images/thumbsup.png" alt="" />
+              <img src="images/love.png" alt="" />
+              <img src="images/clap.png" alt="" />
+              <span class="liked-users">AkaiJoe and 323 others</span>
+            </div>
+            <div class="">
+              <span>90 comments &middot; 40 shares</span>
+            </div>
+          </div>
+          <div class="post-activity">
+            <div>
+              <img
+                src="images/user-3.jpg"
+                alt=""
+                class="post-activity-user-icon"
+              />
+              <img
+                src="images/down-arrow.png"
+                alt=""
+                class="post-activity-arrow-icon"
+              />
+            </div>
+            <div class="post-activity-link">
+              <img src="images/like.png" alt="" /><span>Like</span>
+            </div>
+            <div class="post-activity-link">
+              <img src="images/comment.png" alt="" /><span>Comment</span>
+            </div>
+            <div class="post-activity-link">
+              <img src="images/share.png" alt="" /><span>Share</span>
+            </div>
+            <div class="post-activity-link">
+              <img src="images/send.png" alt="" /><span>Send</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ----------- right-sidebar --------- -->
+      <div class="right-sidebar">
+        <div class="sidebar-news">
+          <img src="images/more.png" alt="" class="info-icon" />
+          <h3>Trending News</h3>
+          <a href="#">High demand for skilled manpower</a>
+          <span>1day ago &middot; 10,934 readers</span>
+
+          <a href="#">Carreers growing holozontally too</a>
+          <span>1day ago &middot; 19,767 readers</span>
+
+          <a href="#">Less work for US, more for UK</a>
+          <span>1day ago &middot; 10,934 readers</span>
+
+          <a href="#">More hiring = higher confidence?</a>
+          <span>2day ago &middot; 92,934 readers</span>
+
+          <a href="#">AkaiJoe is the most terrorist in the USA</a>
+          <span>2day ago &middot; 10,004 readers</span>
+          <a href="#" class="read-more-link">Read More</a>
+        </div>
+        <div class="sidebar-ad">
+          <small>Ad &middot;&middot;&middot;</small>
+          <p>Master the 5 principles of web design</p>
+          <div class="">
+            <img src="images/user-1.jpg" alt="" />
+            <img src="images/mi-logo.png" alt="" />
+          </div>
+          <b>Bland and Demand in Xiamoi</b>
+          <a href="#" class="ad-link">Learn More</a>
+        </div>
+        <div class="sidebar-useful-links">
+          <a href="#">About</a>
+          <a href="#">Accessiblility</a>
+          <a href="#">Help Center</a>
+          <a href="#">Privacy and Policy</a>
+          <a href="#">Advertizing</a>
+          <a href="#">Get the App</a>
+          <a href="#">More</a>
+
+          <div class="copyright-msg">
+            <img src="images/logoSmall.png" alt="" />AkaiLink &#169;2022. All
+            right reserved
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

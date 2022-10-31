@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AkaiLink</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-left">
+        <a href="index.html" class="logo">
+          <img src="images/logoSmall.png" alt="" />
+        </a>
+
+        <div class="search-box">
+          <img src="images/search.png" alt="" />
+          <input type="text" placeholder="Search" />
+        </div>
+      </div>
+      <div class="nav-center">
+        <ul>
+          <li>
+            <a class="active-link" href="#"
+              ><img src="images/home.png" alt="" /><span>Home</span></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img src="images/network.png" alt="" /><span>My Network</span></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img src="images/jobs.png" alt="" /><span>Jobs</span></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img src="images/message.png" alt="" /><span>Messaging</span></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img src="images/notification.png" alt="" /><span
+                >Notifications</span
+              ></a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <div class="online">
+          <img
+            onclick="showOrHideProfile()"
+            class="nav-profile-img"
+            src="images/user-1.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <!-- -------------- Profile-dropdown-menu ----------------- -->
+      <div class="profile-menu-wrap" id="profileMenu">
+        <div class="profile-menu profile-display-none">
+          <div class="user-info">
+            <img src="images/user-1.jpg" alt="" />
+            <div>
+              <h3>Joel KWIHANGANA</h3>
+              <a href="profile.html">See your Profile</a>
+            </div>
+          </div>
+          <hr />
+          <a href="#" class="profile-menu-link">
+            <img src="images/feedback.png" alt="" />
+            <p>Give feedback</p>
+            <span>></span>
+          </a>
+          <a href="#" class="profile-menu-link">
+            <img src="images/setting.png" alt="" />
+            <p>Settings & Privacy</p>
+            <span>></span>
+          </a>
+          <a href="#" class="profile-menu-link">
+            <img src="images/help.png" alt="" />
+            <p>Help & Support</p>
+            <span>></span>
+          </a>
+          <a href="#" class="profile-menu-link">
+            <img src="images/display.png" alt="" />
+            <p>Display & Accessiblility</p>
+            <span>></span>
+          </a>
+          <a href="#" class="profile-menu-link">
+            <img src="images/logout.png" alt="" />
+            <p>Logout</p>
+            <span>></span>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!------- navbar ends here ---------->
+    <div class="container">
+      <div class="profile-main">
+        <div class="profile-container">
+          <img src="images/coverPicBarner.jpg" alt="" width="100%" />
+          <div class="profile-container-inner">
+            <img src="images/user-1.jpg" class="profile-pic" alt="" />
+            <h1>Joel KWIHANGANA</h1>
+            <b>Web Developrer at Microsoft </b>
+            <p>Kigali Rwanda &middot; <a href="#">Contact info</a></p>
+            <div class="mutual-connection">
+              <img src="images/user-2.png" alt="" />
+              <span>1 mutual-connection : Seburikoko Yoweli</span>
+            </div>
+            <div class="profile-btn">
+              <a href="#"><img src="images/connect.png" alt="" />Connect</a>
+              <a href="#"><img src="images/chat.png" alt="" />Message</a>
+            </div>
+          </div>
+        </div>
+        <div class="profile-description">
+          <h2>About</h2>
+          <p>
+            I am software developer with 40+ hours of experience here in the
+            hood!
+          </p>
+          <p>
+            I worked and performed on different projects on gitHub and in many
+            different companies!
+          </p>
+          <a href="#" class="see-more-link">See more...</a>
+        </div>
+
+        <div class="profile-description">
+          <h2>Experience</h2>
+          <div class="profile-desc-row">
+            <img src="images/piscoIcon.png" alt="" />
+            <div>
+              <h3>Lead Front-end Developrer</h3>
+              <b>Pisconetworks &middot; Full-time</b>
+              <b>Feb 2022 - Present &middot; 2 Years </b>
+              <p>
+                Computer programming is the process of performing a particular
+                computational activities.
+              </p>
+              <hr />
+            </div>
+          </div>
+          <div class="profile-desc-row">
+            <img src="images/slack.png" alt="" />
+            <div>
+              <h3>Full-stack Developer</h3>
+              <b>Slack &middot; Full-time</b>
+              <b>Feb 2012 - dec 2020 &middot; 8 Years </b>
+              <p>
+                Computer programming is the process of performing a particular
+                computational activities.
+              </p>
+              <hr />
+            </div>
+          </div>
+          <div class="profile-desc-row">
+            <img src="images/google.png" alt="" />
+            <div>
+              <h3>Web developer</h3>
+              <b>Google Inc &middot; Full-time</b>
+              <b>Feb 2021 - jan 2022 &middot; 1 Year </b>
+              <p>
+                Computer programming is the process of performing a particular
+                computational activities.
+              </p>
+            </div>
+          </div>
+          <hr />
+          <a class="experience-link" href="#">
+            Show all 7 Experiences
+            <img src="images/right-arrow.png" alt="" />
+          </a>
+        </div>
+
+        <div class="profile-description">
+          <h2>Education</h2>
+          <div class="profile-desc-row">
+            <img src="images/universityOfRwanda.png" alt="" />
+            <div>
+              <h3>
+                University of Rwanda College of Science and Technology - CST
+              </h3>
+              <b>Information Technology</b>
+              <b>2028 - Present</b>
+              <hr />
+            </div>
+          </div>
+          <div class="profile-desc-row">
+            <img src="images/stanford.png" alt="" />
+            <div>
+              <h3>Groupe Schoraire BTR Rwamiko</h3>
+              <b>Computer Science</b>
+              <b>2015 - 2017</b>
+              <hr />
+            </div>
+          </div>
+          <div class="profile-desc-row">
+            <img src="images/mit.png" alt="" />
+            <div>
+              <h3>G.S Kinazi</h3>
+              <b>High School</b>
+              <b>2012 - 2014</b>
+            </div>
+          </div>
+        </div>
+        <div class="profile-description">
+          <h2>Skills</h2>
+          <a href="#" class="skills-btn">Software Development</a>
+          <a href="#" class="skills-btn">Internet</a>
+          <a href="#" class="skills-btn">Leadership</a>
+          <a href="#" class="skills-btn">Planning</a>
+          <a href="#" class="skills-btn">Coding</a>
+          <a href="#" class="skills-btn">JavaScript</a>
+          <a href="#" class="skills-btn">Python</a>
+          <a href="#" class="skills-btn">C++</a>
+          <a href="#" class="skills-btn">UI / UX</a>
+          <a href="#" class="skills-btn">Project Management</a>
+          <a href="#" class="skills-btn">DSAs</a>
+          <a href="#" class="skills-btn">Music</a>
+          <a href="#" class="skills-btn">Enterpreneurship</a>
+        </div>
+        <div class="profile-description">
+          <h2>Languages</h2>
+          <a href="#" class="language-btn">English</a>
+          <a href="#" class="language-btn">English</a>
+          <a href="#" class="language-btn">Francais</a>
+        </div>
+      </div>
+      <!-- ------------- profile-sidebar starts here ----------------- -->
+      <div class="profile-sidebar">
+        <div class="sidebar-ad">
+          <small>Ad &middot;&middot;&middot;</small>
+          <p>Master the 5 principles of web design</p>
+          <div class="">
+            <img src="images/user-1.jpg" alt="" />
+            <img src="images/mi-logo.png" alt="" />
+          </div>
+          <b>Bland and Demand in Xiamoi</b>
+          <a href="#" class="ad-link">Learn More</a>
+        </div>
+        <div class="sidebar-people">
+          <h3>People you may know</h3>
+          <div class="sidebar-people-row">
+            <img src="images/user-5.png" alt="" />
+            <div>
+              <h2>SamEl Jackson</h2>
+              <p>Head of department of Information Technology</p>
+              <a href="#">Connect</a>
+            </div>
+          </div>
+          <div class="sidebar-people-row">
+            <img src="images/user-3.jpg" alt="" />
+            <div>
+              <h2>Candy Isheja</h2>
+              <p>Web developer</p>
+              <a href="#">Connect</a>
+            </div>
+          </div>
+          <div class="sidebar-people-row">
+            <img src="images/user-2.png" alt="" />
+            <div>
+              <h2>Yoweli Bizimungu</h2>
+              <p>Head of department of Computer Science</p>
+              <a href="#">Connect</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="profile-footer">
+      <div class="sidebar-useful-links">
+        <a href="#">About</a>
+        <a href="#">Accessiblility</a>
+        <a href="#">Help Center</a>
+        <a href="#">Privacy and Policy</a>
+        <a href="#">Advertizing</a>
+        <a href="#">Get the App</a>
+        <a href="#">More</a>
+
+        <div class="copyright-msg">
+          <img src="images/logoSmall.png" alt="" />AkaiLink &#169;2022. All
+          right reserved
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
